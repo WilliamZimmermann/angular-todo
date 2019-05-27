@@ -1,7 +1,11 @@
 <div>
   <label>
     Nova tarefa:
-    <input autofocus type="text">
+    <input
+      autofocus
+      type="text"
+      (keyup.enter)="addTask($event.target.value)"
+      >
   </label>
   <p>Lista de Tarefas:</p>
   <ul>

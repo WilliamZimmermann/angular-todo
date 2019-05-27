@@ -9,9 +9,10 @@ export class TodoComponent implements OnInit {
   private tasks: String[] = [];
 
   constructor() {
-    this.tasks.push('Estudar');
-    this.tasks.push('Pagar contas');
-    this.tasks.push('Trabalhar');
+  }
+
+  addTask(newTask): void {
+    this.tasks.push(newTask);
   }
 
   ngOnInit() {
