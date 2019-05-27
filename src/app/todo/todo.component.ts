@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todo.component.scss']
 })
 export class TodoComponent implements OnInit {
+  private tasks: String[] = [];
 
-  constructor() { }
+  constructor() {
+    this.tasks.push('Estudar');
+    this.tasks.push('Pagar contas');
+    this.tasks.push('Trabalhar');
+  }
 
   ngOnInit() {
   }
